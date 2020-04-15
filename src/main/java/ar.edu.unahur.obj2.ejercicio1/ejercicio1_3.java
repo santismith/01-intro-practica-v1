@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class ejercicio1_3 {
     public static void main(String[] args) {
 
-    float [] temperaturas= new float[4] ;
+    float [] temperaturasDelDia= new float[4] ;
     Scanner teclado = new Scanner(System.in) ;
     float tempMax ,tempMin ;
-    tempMax=tempMin= temperaturas[0];
+    tempMax=tempMin= temperaturasDelDia[0];
 
-    for (int i = 0 ;i<= temperaturas.length -1; i++){
+    for (int i = 0 ;i<= temperaturasDelDia.length -1; i++){
         System.out.println("Ingrese temperatura en la hora: " + (i+1) );
-        temperaturas[i] = teclado.nextFloat() ;
+        temperaturasDelDia[i] = teclado.nextFloat() ;
 
-        if (temperaturas[i] > tempMax){
-            tempMax = temperaturas[i] ;
+        if (temperaturasDelDia[i] > tempMax){
+            tempMax = temperaturasDelDia[i] ;
         }
 
-        if (temperaturas[i]< tempMin) {
-            tempMin = temperaturas[i];
+        if (temperaturasDelDia[i]< tempMin) {
+            tempMin = temperaturasDelDia[i];
         }
     }
 
-    for (int i=0 ; i<= temperaturas.length-1 ; i++) {
-        System.out.println("Dia " + (i+1) + " "+temperaturas[i] + " C");
+    for (int i=0 ; i<= temperaturasDelDia.length-1 ; i++) {
+        System.out.println("Dia " + (i+1) + " "+temperaturasDelDia[i] + " C");
 
     }
 
