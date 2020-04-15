@@ -2,7 +2,7 @@ package ar.edu.unahur.obj2.ejercicio1;
 
 import java.util.Scanner;
 
-public class Ejercicio2 {
+public class ejercicio1_2 {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in) ;
